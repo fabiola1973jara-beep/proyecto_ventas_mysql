@@ -6,14 +6,14 @@ VALUES
 ("joselyn Jara", "Murcia", "joselyn@example,com", "600393547"),
 ("Kathereinne Mendez", "Guardamar","kate@example.com", "600254777");
 
-#SELECT * FROM clientes;
+SELECT * FROM clientes;
 
 INSERT INTO productos (nombre, precio, stock)
 VALUES
 ("teclado mecanico",45.99, 20),
 ("raton inalambrico", 25.30, 35),
 ("monitor 24 pulgadas", 140.00, 10);
-#SELECT * FROM productos;
+SELECT * FROM productos;
 
 
 INSERT INTO stock_movimientos (id_producto, tipo, cantidad, fecha)
@@ -22,12 +22,12 @@ VALUES
 (2, "entrada", 35, now()),
 (3, "entrada", 10, now());
 
-#SELECT * FROM stock_movimientos;
+SELECT * FROM stock_movimientos;
 
 INSERT INTO ventas (id_cliente, fecha, total)
 VALUES
 (1, now(),140.00);
-#SELECT * FROM ventas;
+SELECT * FROM ventas;
 
 INSERT INTO detalle_ventas (id_ventas, id_producto, cantidad, subtotal)
 VALUES
@@ -45,7 +45,7 @@ WHERE id_producto = 3;    -- actualizar stock
 
 SELECT
   c.nombre,
-  v.id_venta,
+  v.id_ventas,
   v.fecha,
   v.total
 FROM clientes c

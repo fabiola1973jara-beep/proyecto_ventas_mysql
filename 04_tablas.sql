@@ -1,3 +1,4 @@
+USE practicas_sql;
 CREATE TABLE `ventas` (
   `id_ventas` int NOT NULL AUTO_INCREMENT,
   `id_cliente` int DEFAULT NULL,

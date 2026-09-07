@@ -1,3 +1,4 @@
+use practicas_sql;
 CREATE TABLE `productos` (
   `id_producto` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) DEFAULT NULL,

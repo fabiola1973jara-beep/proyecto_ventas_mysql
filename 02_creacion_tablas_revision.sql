@@ -1,3 +1,4 @@
+USE practicas_sql;
 CREATE TABLE `clientes` (
   `id_cliente` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(100) DEFAULT NULL,
